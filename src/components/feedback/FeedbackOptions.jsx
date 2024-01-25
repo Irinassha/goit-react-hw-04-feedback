@@ -18,7 +18,7 @@ export const FeedbackOptions = ({ options, onLeaveFeedback }) => {
               )}
               onClick={() => onLeaveFeedback(item)}
             >
-              {item}
+              {item.charAt(0).toUpperCase() + item.slice(1)}
             </button>
           </li>
         );
